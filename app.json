@@ -1,8 +1,9 @@
+
 {
-  "name": "BWM-XMD",
+  "name": "BWM-XMD-QUANTUM",
   "description": "Best WhatsApp bot developed by Ibrahim Adams",
   "keywords": ["bot", "node", "baileys", "whatsapp"],
-  "logo": "https://files.catbox.moe/h2ydge.jpg",
+  "logo": "https://files.catbox.moe/2kcb4s.jpeg",
   "repository": "https://github.com/ekitale/maths-project",
   "success_url": "/",
   "stack": "heroku-24",
@@ -12,7 +13,7 @@
       "value": ".",
       "required": true
     },
-    "AUTO_REACT": {
+    "AUTO_REJECT_CALL": {
       "description": "Enter yes for your bot to auto react",
       "value": "no",
       "required": false
@@ -58,12 +59,12 @@
       "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "Your Heroku API key (optional)",
+      "description": "Enter your Heroku API key to be able to control your vars",
       "value": "",
       "required": true 
     },
     "HEROKU_APP_NAME": {
-      "description": "Your Heroku app name (optional)",
+      "description": "Enter your Heroku app name to be able to control vars",
       "value": "",
       "required": true 
     },
@@ -71,6 +72,16 @@
       "description": "Enter your number eg, 2547xxxxxxx",
       "value": "254xxxxxxxxx",
       "required": true 
+    },
+   "STATUS_REACT_EMOJIS": {
+      "description": "Enter your auto like status emojis",
+      "value": "🚀,🌎",
+      "required": false 
+    },
+   "AUTO_REACT_STATUS": {
+      "description": "Enter yes for your bot to auto like status",
+      "value": "yes",
+      "required": false 
     },
     "OWNER_NAME": {
       "description": "Owner name",
@@ -102,7 +113,7 @@
       "value": "yes",
       "required": false
     },	  
-    "GROUPANTILINK_REMOVE": {
+    "GROUPANTILINK": {
       "description": "Enable anti-link in groups (yes/no)",
       "value": "yes",
       "required": false
